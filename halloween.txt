@@ -1,0 +1,53 @@
+for density: 0.3 and number of point: 100 we have:
+
+
+the best score with simulated annealing is:  (100, -8) and we call fitness function : 605 
+
+the best score with tabu search is:  (100, -6) and we call fitness function : 19750 
+
+the best score with iterated local search is:  (100, -8) and we call fitness function : 28 
+
+for density: 0.3 and number of point: 1000 we have:
+
+
+the best score with simulated annealing is:  (1000, -15) and we call fitness function : 605 
+
+the best score with tabu search is:  (1000, -11) and we call fitness function : 19982 
+
+the best score with iterated local search is:  (1000, -14) and we call fitness function : 56 
+
+for density: 0.3 and number of point: 5000 we have:
+
+
+the best score with simulated annealing is:  (5000, -24) and we call fitness function : 605 
+
+the best score with tabu search is:  (5000, -15) and we call fitness function : 19988 
+
+the best score with iterated local search is:  (5000, -21) and we call fitness function : 54 
+
+for density: 0.7 and number of point: 100 we have:
+
+
+the best score with simulated annealing is:  (100, -3) and we call fitness function : 605 
+
+the best score with tabu search is:  (100, -3) and we call fitness function : 19806 
+
+the best score with iterated local search is:  (100, -4) and we call fitness function : 8 
+
+for density: 0.7 and number of point: 1000 we have:
+
+
+the best score with simulated annealing is:  (1000, -6) and we call fitness function : 605 
+
+the best score with tabu search is:  (1000, -4) and we call fitness function : 19974 
+
+the best score with iterated local search is:  (1000, -5) and we call fitness function : 14 
+
+for density: 0.7 and number of point: 5000 we have:
+
+
+the best score with simulated annealing is:  (5000, -8) and we call fitness function : 605 
+
+the best score with tabu search is:  (5000, -6) and we call fitness function : 19996 
+
+the best score with iterated local search is:  (5000, -6) and we call fitness function : 16 
