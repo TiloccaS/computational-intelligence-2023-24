@@ -30,7 +30,7 @@ Here the results:
 |-----|-----|---------------|--------------|
 | 69  | 67  |       61      | 64|
 
-On the solution not adaptive we set σ=1 and λ=20 ,in the adaptive instead λ=20 and we obtained in both cases sigma close to zero.
+On the solution not adaptive we set σ=1 and λ=20 ,in the adaptive instead λ=100 and we obtained in both cases sigma close to zero.
 
 
 NB the result could be different beacause the test are also made with random strategy.
