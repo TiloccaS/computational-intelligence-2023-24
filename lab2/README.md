@@ -34,4 +34,6 @@ On the solution not adaptive we set σ=1 and λ=20 ,in the adaptive instead λ=1
 
 
 NB the result could be different beacause the test are also made with random strategy.
+### Review Done
+Add review to [Tartaglione Salvatore](https://github.com/SaSa0011/Computational-Intelligence/issues/2) and [Cabras Salvatore](https://github.com/SalvoCab99/Computational-Intelligence/issues/1)
 
