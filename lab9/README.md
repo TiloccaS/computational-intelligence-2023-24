@@ -27,3 +27,7 @@ The number of fitness calls depends on the convergence range that is defined, th
 | 1 Problem instances | 2 Problem instances |  5 Problem instances | 10 Problem instances |
 |-----|-----|---------------|--------------|
 | 20140   | 23380   |       20520      | 21280|
+
+
+### Review Done
+Add review to [Guido Pio Natalizio](https://github.com/Guido-Pio-Natalizio/computational-intelligence/issues/2) and [Ludovico Fiorio](https://github.com/ludofiorio/labs_comp_inte/issues/6)
