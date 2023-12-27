@@ -39,4 +39,4 @@ We show the results in the table below:
 
 
 # Review Done
-Review do to Porcheddu Massimo[https://github.com/TheMassimo/Computational_intelligence/issues/6] and Incaviglia Salvatore[https://github.com/SalvatorePolito98/Computational_Intelligence24/issues/4]
+Review do to [Porcheddu Massimo] (https://github.com/TheMassimo/Computational_intelligence/issues/6) and [Incaviglia Salvatore](https://github.com/SalvatorePolito98/Computational_Intelligence24/issues/4)
