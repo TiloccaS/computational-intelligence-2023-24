@@ -35,3 +35,8 @@ We show the results in the table below:
 |0.9|0.5|500000|`82.00%`|
 |0.9|0.7|500000|76.00%|
 |0.9|0.9|500000|65.50%|
+
+
+
+# Review Done
+Review do to Porcheddu Massimo[https://github.com/TheMassimo/Computational_intelligence/issues/6] and Incaviglia Salvatore[https://github.com/SalvatorePolito98/Computational_Intelligence24/issues/4]
