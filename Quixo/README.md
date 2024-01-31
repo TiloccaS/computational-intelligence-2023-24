@@ -22,6 +22,9 @@ For the RL strategy we used QLearning, creating two separate dictionaries, one f
 We decided to use the default dict as it offered the possibility to make the training faster, avoiding checking the presence of keys in the dictionary. 
 We decided to use .pik file with dill module for the dictionary as it allowed to save custom classes in the file, without convert it in string.
 Despite the use of symmetry techniques to reduce the size of the dictionary, the RL has not proved to be a good strategy, as it has excessive memory consumption, probably it takes other techniques because try to reduce its consumption even more.
+We set those hyperparameters:
+* learning rate = 0.1
+* discount factor = 0.7
 
 ### Results Obtained
 Since the dictionary has not been fully trained due the fact the excessive memory consumption the results obtained are not good(the length of the dictionaries is approximately 3 million):
@@ -29,7 +32,7 @@ Since the dictionary has not been fully trained due the fact the excessive memor
 * Player 2 = 45.6% of win
 
 ### How we manage symmetry in RL:
-For the example we show only 3 matrix with 3x3 dimension,  but we use symmetry of all possible rotations and all possible mirrors:
+For the example in this readme and in the report we show only 3 matrix with 3x3 dimension,  but we use symmetry of all possible rotations and all possible mirrors board:
 Giving the Game._board, we extract its state in a named tuple, for each state we have the coordinate of the cells selcted: State = namedtuple('state', ['x' 'o']), we put namedtuple in CustomState class.
 We used the custom state class, which represents the current state of the board as the key for the dictionary, so we used the following __hash__  function, and the following _eq_ function, custom state take in input namedtuple('state', ['x', 'o']):
 ```
