@@ -74,7 +74,7 @@ pyhton main.py
 --pretrain_path_o <.train_results/rl_x.pik>
 --save_model_path_o <path where you want save the dictionary of o>
 --save_model_path_x <path where you want save the dictionary of x>
---train < **True** if you want train new dictionary **False** Otherwise>
+--train < True if you want train new dictionary False Otherwise>
 --max_steps <how many epoch for train the dictionary>
 --player <0: you will test with first and second player, 1: you will test with first player , 2: you will test with second player>
 --num_games <how many games to test the strategies>
