@@ -4,39 +4,47 @@ Quixo is a strategic board game created by Thierry Chapeau and published by GIGA
 The goal of this project is to create a player able to play and get good results with the game of quixo, using techniques seen in class such as Adversarial Search and Reinforcement Learning
 
 ## MinMax Strategy
-The strategy of the MinMax was inspired by the following repo: https://github.com/Berkays/Quixo. 
+First, we implemented a player based on MinMax strategy, our implementation is inspired by the following repository: https://github.com/Berkays/Quixo. 
+
 The MinMax is proposed with alpha beta pruning, with the addition of a fitness function that allows you to give a value to the state even if it is not the end of the game but in the final state of the recursion due to the limited depth (we set depth=2 as default), the values returned by the fitness are the following:
 * 100/-100 if there is a winner 
 * +5/-5  for each row, column or diagonal that has 4 checkers consecutive
 * +20/-20 if the player take the centre of the board
-* The difference between the number of pieces of the x and the o in the board  
-The code has been adapted to the board proposed by our project and other improvements has been done,
-such for instance the way we check the consecutive checkers or the fact of considering the occurrences also in 
-the main and secondary diagonal, in addition we slightly change the score giving from a fitness
+* The difference between the number of pieces of the x and the o in the board
+
+The code has been adapted to the board proposed by our project and other
+improvements has been done, such as, for instance, the way we check the consecutive checkers or the fact of considering the occurrences also in 
+the main and secondary diagonal, in addition we slightly changed the score giving from the fitness.
 
 ### Results Obtained
-The results obtained are impressive:
-* Player 1 = 100% of win
-* Player 2 = 100% of win
+We tested our player against a Random player, we made them play 1000 games considering the MinMax player as player1 and 1000 games considering as player2. The results obtained are impressive:
+* As player 1 &rarr; 100% of win
+* As player 2 &rarr; 100% of win
 
 ## RL Strategy
-For the RL strategy we used QLearning, creating two separate dictionaries, one for x and one for O, due to the fact that unlike tic tac toe, a move that is available for the first player is not said to be available for the second player. The reward has been set to 1 if the first player -1 wins if the second player wins, 0 otherwise.
-We decided to use the default dict as it offered the possibility to make the training faster, avoiding checking the presence of keys in the dictionary. 
-We decided to use .pik file with dill module for the dictionary as it allowed to save custom classes in the file, without convert it in string.
-Despite the use of symmetry techniques to reduce the size of the dictionary, the RL has not proved to be a good strategy, as it has excessive memory consumption, probably it takes other techniques because try to reduce its consumption even more.
-We set those hyperparameters:
+Then we tried to implement a Reinforcement Learning player.
+For the RL strategy we used QLearning, creating two separate dictionaries, one for `x` player and one for `o` player, due to the fact that unlike tic tac toe, a move that is valid for the first player may not be valid for the second player.
+As rewards we used:
+* 1 if the first player wins 
+* -1 if the second player wins
+* 0 if they draw
+
+We decided to use the defaultdict as it offered the possibility to make the training faster, avoiding checking the presence of keys in the dictionary. 
+We decided to use .pik file with dill module to save the dictionaries as it allowed to save custom classes in the file, without convert it in string.
+For the training we used 100000 steps and the following hyperparameters:
 * learning rate = 0.1
 * discount factor = 0.7
 
-### Results Obtained
-Since the dictionary has not been fully trained due the fact the excessive memory consumption the results obtained are not good(the length of the dictionaries is approximately 3 million):
-* Player 1 = 49.5% of win
-* Player 2 = 45.6% of win
-
 ### How we manage symmetry in RL:
-For the example in this readme and in the report we show only 3 matrix with 3x3 dimension,  but we use symmetry of all possible rotations and all possible mirrors board:
-Giving the Game._board, we extract its state in a named tuple, for each state we have the coordinate of the cells selcted: State = namedtuple('state', ['x' 'o']), we put namedtuple in CustomState class.
-We used the custom state class, which represents the current state of the board as the key for the dictionary, so we used the following __hash__  function, and the following _eq_ function, custom state take in input namedtuple('state', ['x', 'o']):
+Since Quixo is a complex game, we tried to reduce the dimension of our dictionaries by managing simmetries of the board. 
+Below there is an example of 3x3 matrix that shows few cases, but we adapted it for a 5x5 matrix and we considered all possible rotations and mirrors board.
+
+Giving the Game._board, we extract its state in a namedtuple, for each state we have the coordinates of the cells selected:
+
+    State = namedtuple('state', ['x', 'o'])
+
+Then we create the CustomState class, in which we have this namedtuple which represents the current state.
+In this way for each state we have an instance of CustomState class that we used as the key for the two dictionaries, in order to do that we implemented the following two functions:
 ```
 
 def __eq__(self, other_state):
@@ -55,6 +63,17 @@ def __eq__(self, other_state):
 ### Example of symmetry:
 
 ![Alt text](https://github.com/TiloccaS/computational-intelligence-2023-24/blob/main/Quixo/0ffe1648c7fa12a3b0ecd3c075e28833-34.jpg)
+
+
+Despite the use of symmetry techniques to reduce the size of the dictionaries, the RL has not proved to be a good strategy, as it has excessive memory consumption, probably it takes other techniques to try to reduce its consumption even more.
+
+### Results Obtained
+Even for this player, we used the same testing approch. 
+Since the dictionary has not been fully trained due the excessive memory consumption the results obtained are not good (the length of both two dictionaries is approximately 3.5 million):
+* As player 1 &rarr; 49.5% of win
+* As player 2 &rarr; 45.6% of win
+
+As we can see from the results obtained, the player with the best performance appears to be the MinMax player, but most likely with more training the RL player would have obtained better performances than those shown.
 
 ## Installation:
 This code has been tested on python 3.9.16.
