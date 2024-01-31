@@ -6,16 +6,16 @@ The goal of this project is to create a player able to play and get good results
 ## MinMax Strategy
 The strategy of the MinMax was inspired by the following repo: https://github.com/Berkays/Quixo. 
 The MinMax is proposed with alpha beta pruning, with the addition of a fitness function that allows you to give a value to the state even if it is not the end of the game but in the final state of the recursion due to the limited depth, the values returned by the fitness are the following:
-•	100/-100 if there is a winner 
-•	+5/-5  for each row, column or diagonal that has 4 checkers consecutive
-•	+20/-20 if the player take the centre of the board
-•	The difference between the number of pieces of the x and the o in the board
+* 100/-100 if there is a winner 
+* +5/-5  for each row, column or diagonal that has 4 checkers consecutive
+* +20/-20 if the player take the centre of the board
+* The difference between the number of pieces of the x and the o in the board
 The code has been adapted to the board proposed by our project and other evaluation strategy have been added to the fitness, such for instance the way we check the consecutive checkers or the fact of considering the occurrences also in the main and secondary diagonal, in addition we slightly change the score giving from a fitness
 
 ### Results Obtained
 The results obtained are impressive:
-•	Player 1 = 100% of win
-•	Player 2 = 100% of win
+* Player 1 = 100% of win
+* Player 2 = 100% of win
 
 ## RL Strategy
 For the RL strategy we used QLearning, creating two separate dictionaries, one for x and one for O, due to the fact that unlike tic tac toe, a move that is available for the first player is not said to be available for the second player. The reward has been set to 1 if the first player -1 wins if the second player wins, 0 otherwise.
