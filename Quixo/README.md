@@ -51,6 +51,35 @@ def __eq__(self, other_state):
 
 ![Alt text](https://github.com/TiloccaS/computational-intelligence-2023-24/blob/main/Quixo/0ffe1648c7fa12a3b0ecd3c075e28833-34.jpg)
 
+## Installation:
+This code has been tested on python 3.9.16.
+**First of all unzip the dictionary file contained in train_results folder**
+```
+
+git clone https://github.com/srrmtt/GU03-bioinspired-basecaller.git](https://github.com/TiloccaS/computational-intelligence-2023-24.git
+python3 -m venv my_env
+source my_env/bin/activate
+cd Quixo
+pip install --upgrade pip
+pip install -r requirements.txt
+
+```
+## Test players
+
+```
+
+pyhton main.py
+--strategy <0: min max and rl, 1: minmax, 2: rl>
+--pretrain_path_o <.train_results/rl_o.pik>
+--pretrain_path_o <.train_results/rl_x.pik>
+--save_model_path_o <path where you want save the dictionary of o>
+--save_model_path_x <path where you want save the dictionary of x>
+--train < **True** if you want train new dictionary **False** Otherwise>
+--max_steps <how many epoch for train the dictionary>
+--player <0: you will test with first and second player, 1: you will test with first player , 2: you will test with second player>
+--num_games <how many games to test the strategies>
+
+```
 
 
 
