@@ -25,8 +25,8 @@ Despite the use of symmetry techniques to reduce the size of the dictionary, the
 
 ### Results Obtained
 Since the dictionary has not been fully trained due the fact the excessive memory consumption the results obtained are not good(the length of the dictionaries is approximately 3 million):
-•	Player 1 = 49.5% of win
-•	Player 2 = 45.6% of win
+* Player 1 = 49.5% of win
+* Player 2 = 45.6% of win
 
 ### How we manage symmetry in RL:
 For the example we show only 3 matrix with 3x3 dimension,  but we use symmetry of all possible rotations and all possible mirrors:
