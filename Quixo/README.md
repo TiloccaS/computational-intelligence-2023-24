@@ -1,11 +1,11 @@
 # Quixo
-This project was done by Tilocca Salvatore s305938 and Davide Natale s318967
+This project was done by Tilocca Salvatore s305938 and Davide Natale s318967. 
 Quixo is a strategic board game created by Thierry Chapeau and published by GIGAMIC. The game is a variation of the classic game "Noughts and Crosses" (Tic-Tac-Toe), featuring a 5x5 board on which players try to align five of their symbols (circles or crosses) horizontally, vertically, or diagonally to win. The unique aspect of Quixo is that players can move the rows or columns of the board instead of individual pieces, adding an element of strategy and tactics.
 The goal of this project is to create a player able to play and get good results with the game of quixo, using techniques seen in class such as Adversarial Search and Reinforcement Learning
 
 ## MinMax Strategy
 The strategy of the MinMax was inspired by the following repo: https://github.com/Berkays/Quixo. 
-The MinMax is proposed with alpha beta pruning, with the addition of a fitness function that allows you to give a value to the state even if it is not the end of the game but in the final state of the recursion due to the limited depth (we seth depth=2 as default), the values returned by the fitness are the following:
+The MinMax is proposed with alpha beta pruning, with the addition of a fitness function that allows you to give a value to the state even if it is not the end of the game but in the final state of the recursion due to the limited depth (we set depth=2 as default), the values returned by the fitness are the following:
 * 100/-100 if there is a winner 
 * +5/-5  for each row, column or diagonal that has 4 checkers consecutive
 * +20/-20 if the player take the centre of the board
