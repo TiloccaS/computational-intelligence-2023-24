@@ -1,0 +1,7 @@
+venv/
+poetry.lock
+pyproject.toml
+__pycache__/
+strategies/__pycache__/
+train_results/rl_o.pik
+train_results/rl_x.pik
