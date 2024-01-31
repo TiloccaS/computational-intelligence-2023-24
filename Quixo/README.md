@@ -5,7 +5,7 @@ The goal of this project is to create a player able to play and get good results
 
 ## MinMax Strategy
 The strategy of the MinMax was inspired by the following repo: https://github.com/Berkays/Quixo. 
-The MinMax is proposed with alpha beta pruning, with the addition of a fitness function that allows you to give a value to the state even if it is not the end of the game but in the final state of the recursion due to the limited depth, the values returned by the fitness are the following:
+The MinMax is proposed with alpha beta pruning, with the addition of a fitness function that allows you to give a value to the state even if it is not the end of the game but in the final state of the recursion due to the limited depth (we seth depth=2 as default), the values returned by the fitness are the following:
 * 100/-100 if there is a winner 
 * +5/-5  for each row, column or diagonal that has 4 checkers consecutive
 * +20/-20 if the player take the centre of the board
