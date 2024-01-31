@@ -76,7 +76,7 @@ Since the dictionary has not been fully trained due the excessive memory consump
 As we can see from the results obtained, the player with the best performance appears to be the MinMax player, but most likely with more training the RL player would have obtained better performances than those shown.
 
 ## Installation:
-This code has been tested on python 3.9.16.
+This code has been tested on python 3.9.16.  
 **First of all unzip the dictionary file contained in train_results folder**
 ```
 
