@@ -47,6 +47,7 @@ def __eq__(self, other_state):
         return hash(str(self.get_equivalent()))
 
 ```
+![Alt text](Quixo/0ffe1648c7fa12a3b0ecd3c075e28833-34.jpg)
 
 
 
