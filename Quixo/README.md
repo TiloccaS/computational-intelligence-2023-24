@@ -9,8 +9,10 @@ The MinMax is proposed with alpha beta pruning, with the addition of a fitness f
 * 100/-100 if there is a winner 
 * +5/-5  for each row, column or diagonal that has 4 checkers consecutive
 * +20/-20 if the player take the centre of the board
-* The difference between the number of pieces of the x and the o in the board
-The code has been adapted to the board proposed by our project and other evaluation strategy have been added to the fitness, such for instance the way we check the consecutive checkers or the fact of considering the occurrences also in the main and secondary diagonal, in addition we slightly change the score giving from a fitness
+* The difference between the number of pieces of the x and the o in the board  
+The code has been adapted to the board proposed by our project and other improvements has been done,
+such for instance the way we check the consecutive checkers or the fact of considering the occurrences also in 
+the main and secondary diagonal, in addition we slightly change the score giving from a fitness
 
 ### Results Obtained
 The results obtained are impressive:
