@@ -1,5 +1,5 @@
 # Quixo
-This project was done by Tilocca Salvatore s305938 and Davide Natale s318967. 
+This project was done by Tilocca Salvatore s305938 and [Davide Natale](https://github.com/Davide-Natale/Computational-Intelligence.git) . 
 Quixo is a strategic board game created by Thierry Chapeau and published by GIGAMIC. The game is a variation of the classic game "Noughts and Crosses" (Tic-Tac-Toe), featuring a 5x5 board on which players try to align five of their symbols (circles or crosses) horizontally, vertically, or diagonally to win. The unique aspect of Quixo is that players can move the rows or columns of the board instead of individual pieces, adding an element of strategy and tactics.
 The goal of this project is to create a player able to play and get good results with the game of quixo, using techniques seen in class such as Adversarial Search and Reinforcement Learning
 
