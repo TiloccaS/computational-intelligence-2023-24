@@ -47,7 +47,7 @@ def __eq__(self, other_state):
         return hash(str(self.get_equivalent()))
 
 ```
-![Alt text](computational-intelligence-2023-24/Quixo/0ffe1648c7fa12a3b0ecd3c075e28833-34.jpg)
+![Alt text](https://github.com/TiloccaS/computational-intelligence-2023-24/blob/main/Quixo/0ffe1648c7fa12a3b0ecd3c075e28833-34.jpg)
 
 
 
