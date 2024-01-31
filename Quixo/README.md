@@ -56,7 +56,7 @@ This code has been tested on python 3.9.16.
 **First of all unzip the dictionary file contained in train_results folder**
 ```
 
-git clone https://github.com/srrmtt/GU03-bioinspired-basecaller.git](https://github.com/TiloccaS/computational-intelligence-2023-24.git
+git clone https://github.com/TiloccaS/computational-intelligence-2023-24.git
 python3 -m venv my_env
 source my_env/bin/activate
 cd Quixo
